@@ -15,7 +15,10 @@
  */
 
 function coinFlip() {
-
+  if(Math.random() < 0.5) {
+    return 'tails';
+}
+return 'heads';
 }
 
 /** Multiple coin flips
@@ -38,7 +41,12 @@ function coinFlip() {
  */
 
 function coinFlips(flips) {
-
+  const heads_tails = [];
+  
+  for (let i = 0; i < flips; i++) {
+    heads_tails[i] = coinFlip();
+  }
+  return heads_tails;
 }
 
 /** Count multiple flips
@@ -73,8 +81,10 @@ function flipACoin(call) {
 
 }
 
+export {coinFlip, coinFlips, countFlips, flipACoin}
 
 /** Export 
+ * 
  * 
  * Export all of your named functions
 */
