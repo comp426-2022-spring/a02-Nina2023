@@ -6,15 +6,16 @@ if (args.length == 0){
     console.log("Error: no input.");
     console.log("Usage: node guess-flip --call=[heads|tails]");
 }
-else if (args!='--call=tails' && args!='--call=heads'){
+
+if (args!='--call=tails' && args!='--call=heads'){
     console.log("Error: wrong input.");
     console.log("Usage: node guess-flip --call=[heads|tails]");
 }
-else{
-    if (args == '--call=tails'){
+
+if (args == '--call=tails'){
         console.log(flipACoin('tails'))
     }
     else{
         console.log(flipACoin('heads'))
     }
-}
+
