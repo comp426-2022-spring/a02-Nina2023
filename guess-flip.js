@@ -11,7 +11,7 @@ if (args!='--call=tails' && args!='--call=heads'){
     console.log("Error: wrong input.");
     console.log("Usage: node guess-flip --call=[heads|tails]");
 }
-
+//turtle
 if (args == '--call=tails'){
         console.log(flipACoin('tails'))
     }
